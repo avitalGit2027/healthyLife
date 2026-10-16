@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { SingleUser } from '../../interfaces/Single-User';
 
+
 @Component({
   imports: [],
   selector: 'app-user',
@@ -8,6 +9,9 @@ import { SingleUser } from '../../interfaces/Single-User';
   templateUrl: './user.html',
 })
 export class User {
-  @Input() user:SingleUser|undefined
-
+  @Input() user: SingleUser|undefined
+  
+  deleteUser(id: number | undefined): void {
+   
+  }
 }

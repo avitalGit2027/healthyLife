@@ -1,0 +1,120 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+
+.member-card {
+  background: #fff;
+  border: 1px solid #edf0e9;
+  border-radius: 18px;
+  height: 100%;
+  padding: 21px;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.member-card:hover {
+  border-color: #d9e6d3;
+  box-shadow: 0 12px 28px rgba(50, 75, 48, 0.07);
+  transform: translateY(-3px);
+}
+
+.member-card-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-avatar {
+  align-items: center;
+  background: linear-gradient(145deg, #e1eddb, #f2f5e9);
+  border: 3px solid #f6f8f3;
+  border-radius: 50%;
+  color: var(--green-700);
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  width: 49px;
+}
+
+.member-status {
+  align-items: center;
+  background: #eef5eb;
+  border-radius: 999px;
+  color: #53744c;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 650;
+  gap: 6px;
+  padding: 6px 9px;
+}
+
+.member-status.inactive {
+  background: #f2f1ee;
+  color: #76756f;
+}
+
+.status-dot {
+  background: #77a66e;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+}
+
+.inactive .status-dot {
+  background: #aaa9a2;
+}
+
+.member-card h3 {
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 700;
+  margin: 17px 0 3px;
+}
+
+.member-caption {
+  color: #90988e;
+  font-size: 11px;
+  margin: 0;
+}
+
+.member-details {
+  border-top: 1px solid #f0f1ed;
+  display: grid;
+  gap: 11px;
+  margin-top: 18px;
+  padding-top: 14px;
+}
+
+.detail-row {
+  align-items: center;
+  color: #6c786a;
+  display: flex;
+  font-size: 12px;
+  gap: 9px;
+  min-width: 0;
+}
+
+.detail-row > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.detail-icon {
+  color: #82977d;
+  display: inline-flex;
+  flex: 0 0 17px;
+}
+
+.detail-icon svg {
+  height: 17px;
+  width: 17px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member-card {
+    transition: none;
+  }
+}

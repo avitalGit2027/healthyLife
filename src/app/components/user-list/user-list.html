@@ -1,5 +1,19 @@
-<!-- @for(item in usersList ;track item)
-{
-<user [user]="item"></user>
-} -->
-    
+<section class="community-section" aria-labelledby="community-heading">
+  <div class="community-heading">
+    <div>
+      <span class="section-kicker">לא לבד בדרך</span>
+      <h2 id="community-heading">הקהילה שלנו</h2>
+      <p>אנשים אמיתיים, צעדים קטנים, והרבה עידוד בדרך לחיים בריאים.</p>
+    </div>
+    <div class="member-count" aria-label="{{ usersList.length }} חברים בקהילה">
+      <span class="count-number">{{ usersList.length }}</span>
+      <span class="count-label">חברים בקהילה</span>
+    </div>
+  </div>
+
+  <div class="member-grid">
+    @for (item of usersList; track item) {
+      <app-user [user]="item"></app-user>
+    }
+  </div>
+</section>

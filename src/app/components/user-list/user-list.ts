@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 import { User } from '../user/user';
 import { SingleUser } from '../../interfaces/Single-User';
 
+
+
 @Component({
-  imports: [],
+  imports: [User],
   selector: 'app-user-list',
   styleUrl: './user-list.css',
   templateUrl: './user-list.html',

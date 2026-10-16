@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: light;
+  --green-100: #eef4ea;
+  --green-600: #6a9162;
+  --green-700: #4e754b;
+  --green-800: #385d3c;
+  --ink: #25352a;
+  --ink-soft: #68766a;
+  background: #fbfcf8;
+  color: var(--ink);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 82% 12%, rgba(239, 245, 233, 0.6), transparent 29rem),
+    #fbfcf8;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #dcebd6;
+  color: var(--green-800);
+}
